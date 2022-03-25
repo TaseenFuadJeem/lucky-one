@@ -1,3 +1,5 @@
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
 import './Shop.css';
@@ -29,7 +31,7 @@ const Shop = () => {
             </div>
             <div className='cart-container'>
                 <div className='cart-info'>
-                    <h1>This is cart container</h1>
+                    <h1>CART <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon></h1>
                 </div>
             </div>
         </div>

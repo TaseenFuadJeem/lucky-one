@@ -16,6 +16,9 @@
     top: 20px;
 
 }
+.cart-info h1 {
+    text-align: center;
+}
 .products-container{
     padding-left: 40px;
     display: grid;
