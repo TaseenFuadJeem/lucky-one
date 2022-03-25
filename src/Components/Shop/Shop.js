@@ -32,6 +32,7 @@ const Shop = () => {
             <div className='cart-container'>
                 <div className='cart-info'>
                     <h1>CART <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon></h1>
+                    <hr />
                 </div>
             </div>
         </div>
