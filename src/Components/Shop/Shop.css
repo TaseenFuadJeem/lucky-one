@@ -10,3 +10,9 @@
     border-radius: 20px;
     box-shadow: 0px 0px 9px 1px gray;
 }
+.products-container{
+    padding-left: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
