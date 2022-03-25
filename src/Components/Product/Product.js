@@ -11,6 +11,7 @@ const Product = ({ product }) => {
             <h3>{name}</h3>
             <h4>Price : {price} BDT</h4>
             <p>Manufacturer : {seller}</p>
+            <button className='btn-cart'><strong>Add to cart</strong></button>
         </div>
     );
 };

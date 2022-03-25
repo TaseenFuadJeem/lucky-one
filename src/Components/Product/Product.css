@@ -1,9 +1,26 @@
 .product{
     width: 300px;
+    height: 600px;
     border-radius: 15px;
     padding: 15px;
     box-shadow: 0px 0px 18px 1px gray;
+    position: relative;
 }
 .product img{
     border-radius: 20px;
+}
+.btn-cart{
+    background-color: #ff4c0571;
+    transition: background-color 0.5s ease 0s;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+    border: 0;
+    position: absolute;
+    bottom: 10px;
+}
+
+.btn-cart:hover{
+    background-color: #ff4d05;
 }
