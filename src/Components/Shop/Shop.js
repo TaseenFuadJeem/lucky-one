@@ -15,7 +15,7 @@ const Shop = () => {
             .then(res => res.json())
             .then(data => setProducts(data))
     }, []);
-
+    // event handler for add to cart and ERROR alert massage
     const handleAddToCart = (product) => {
         const addedProduct = cart.find(cart => cart.id === product.id);
         if (addedProduct) {
@@ -27,11 +27,11 @@ const Shop = () => {
         }
 
     }
-
+    // event handler for reset button in cart component
     const emptyCart = () => {
         setCart([]);
     }
-
+    // event handler for 'Choose one for me' button in cart component
     const chooseOneButton = () => {
         const random = Math.floor(Math.random() * cart.length);
         const newCart = [cart[random]]
