@@ -60,7 +60,7 @@ const Shop = () => {
                         ></Cart>)
                     }
                     <button onClick={chooseOneButton} className='cart-btn'>Choose one for me</button>
-                    <button onClick={emptyCart} className='cart-btn'>Choose again!!</button>
+                    <button onClick={emptyCart} className='cart-btn'>RESET</button>
                 </div>
             </div>
         </div>
