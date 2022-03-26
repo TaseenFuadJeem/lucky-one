@@ -23,6 +23,10 @@ const Shop = () => {
         // console.log(product);
     }
 
+    const emptyCart = () => {
+        setCart([]);
+    }
+
     return (
         <div className='shop-container'>
             <div className='products-container'>
@@ -45,7 +49,7 @@ const Shop = () => {
                         ></Cart>)
                     }
                     <button className='cart-btn'>Choose one for me</button>
-                    <button className='cart-btn'>Choose again!!</button>
+                    <button onClick={emptyCart} className='cart-btn'>Choose again!!</button>
                 </div>
             </div>
         </div>
