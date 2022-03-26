@@ -14,7 +14,6 @@
 .cart-info{
     position: sticky;
     top: 20px;
-
 }
 .cart-info h1 {
     text-align: center;
@@ -34,5 +33,6 @@
     }
     .products-container{
         grid-template-columns: 1fr;
+        padding-left: 5px;
     }
 }

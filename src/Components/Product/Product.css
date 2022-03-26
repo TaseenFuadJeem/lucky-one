@@ -24,3 +24,13 @@
 .btn-cart:hover{
     background-color: #ff4d05;
 }
+
+@media screen and (max-width:992px) {
+    .product{
+        width: 200px;
+        height: 470px;
+    }
+    .product img{
+        width: 200px;
+    }
+}
