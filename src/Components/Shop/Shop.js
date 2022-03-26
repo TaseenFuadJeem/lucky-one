@@ -9,7 +9,6 @@ const Shop = () => {
 
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
-    // console.log(cart);
 
     useEffect(() => {
         fetch('product.json')
@@ -18,9 +17,15 @@ const Shop = () => {
     }, []);
 
     const handleAddToCart = (product) => {
-        const newCart = [...cart, product]
-        setCart(newCart);
-        // console.log(product);
+        const addedProduct = cart.find(cart => cart.id === product.id);
+        if (addedProduct) {
+            alert('You can not add the same product twice in cart')
+        }
+        else {
+            const newCart = [...cart, product]
+            setCart(newCart);
+        }
+
     }
 
     const emptyCart = () => {
