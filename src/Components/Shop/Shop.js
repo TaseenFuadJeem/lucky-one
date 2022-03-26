@@ -7,6 +7,8 @@ import './Shop.css';
 const Shop = () => {
 
     const [products, setProducts] = useState([]);
+    const [cart, setCart] = useState([]);
+    console.log(cart);
 
     useEffect(() => {
         fetch('product.json')
@@ -15,7 +17,8 @@ const Shop = () => {
     }, []);
 
     const handleAddToCart = (product) => {
-        console.log(product);
+        const newCart = [...cart, product]
+        setCart(newCart);
     }
 
     return (
@@ -33,6 +36,9 @@ const Shop = () => {
                 <div className='cart-info'>
                     <h1>CART <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon></h1>
                     <hr />
+                    {
+                        cart.map(item => <h1>{item.name}</h1>)
+                    }
                 </div>
             </div>
         </div>
