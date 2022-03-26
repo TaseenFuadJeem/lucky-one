@@ -27,6 +27,11 @@ const Shop = () => {
         setCart([]);
     }
 
+    const chooseOneButton = () => {
+        const random = Math.floor(Math.random() * cart.length);
+        console.log(cart[random]);
+    }
+
     return (
         <div className='shop-container'>
             <div className='products-container'>
@@ -48,7 +53,7 @@ const Shop = () => {
                             item={item}
                         ></Cart>)
                     }
-                    <button className='cart-btn'>Choose one for me</button>
+                    <button onClick={chooseOneButton} className='cart-btn'>Choose one for me</button>
                     <button onClick={emptyCart} className='cart-btn'>Choose again!!</button>
                 </div>
             </div>
